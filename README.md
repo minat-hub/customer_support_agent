@@ -51,13 +51,14 @@ To obtain a Groq API key: https://console.groq.com → API Keys → Create API K
 ```powershell
 streamlit run app.py
 ```
-Streamlit will print a local URL (e.g., http://localhost:8501). Open it in your browser.
+Streamlit will print a local URL (e.g., <http://localhost:8501>). Open it in your browser.
 
 ## macOS and Linux Setup
 
 The steps are similar, but commands use bash/zsh and `python3`.
 
 ### 1) Create and activate a virtual environment
+
 ```bash
 # From the project root
 python3 -m venv supportenv
@@ -67,12 +68,14 @@ source supportenv/bin/activate
 ```
 
 ### 2) Install dependencies
+
 ```bash
 python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 ### 3) Set up environment variables
+
 Create a `.env` file in the project root:
 
 ```bash
@@ -86,13 +89,17 @@ export GROQ_API_KEY=your_groq_api_key_here
 ```
 
 ### 4) Run the app
+
 ```bash
 streamlit run app.py
 ```
-Open the printed local URL (e.g., http://localhost:8501).
+
+Open the printed local URL (e.g., <http://localhost:8501>).
 
 ### 5) (Optional) Use Ollama locally
+
 - macOS (Homebrew):
+
   ```bash
   brew install ollama
   ollama serve
@@ -100,6 +107,7 @@ Open the printed local URL (e.g., http://localhost:8501).
   ```
 
 - Linux:
+
   ```bash
   curl -fsSL https://ollama.com/install.sh | sh
   # Start the server (keep this running in a separate terminal)
@@ -112,14 +120,17 @@ Open the printed local URL (e.g., http://localhost:8501).
 Keep the `ollama serve` process running while you use the app.
 
 To deactivate the virtual environment when done:
+
 ```bash
 deactivate
 ```
 
 ## Switching LLMs
+
 The app supports both Groq (cloud) and Ollama (local). In `app.py` you can toggle which LLM to use.
 
 Current default in code:
+
 ```python
 from langchain_groq import ChatGroq
 # ...
@@ -127,12 +138,14 @@ llm = ChatGroq(model="openai/gpt-oss-120b")  # Uses GROQ_API_KEY from .env
 ```
 
 To use Ollama instead, ensure Ollama is running and a model is installed (e.g., `llama3.2`):
+
 ```powershell
 ollama list
 # or install a model
 ollama pull llama3.2
 ```
 Then in `app.py`, switch to:
+
 ```python
 from langchain_ollama import OllamaLLM
 # ...
@@ -140,6 +153,7 @@ llm = OllamaLLM(model="llama3.2")
 ```
 
 ## CSV Format
+
 Your CSV should include at least these columns:
 - `question`
 - `answer`
@@ -157,11 +171,13 @@ An example file is provided: `sample_customer_data.csv`.
   - Run `ollama list` to see installed models. Pull the model you configured (e.g., `ollama pull llama3.2`).
 
 ## Deploying
-- Streamlit Community Cloud: Push this repo to GitHub and deploy via https://streamlit.io/cloud (note: Ollama won't be available there; prefer Groq).
+
+- Streamlit Community Cloud: Push this repo to GitHub and deploy via <https://streamlit.io/cloud> (note: Ollama won't be available there; prefer Groq).
 - Docker/Railway/Render/AWS: Containerize with a Dockerfile and run on your provider. Ensure you set `GROQ_API_KEY` in the service environment.
 
 ## Project Structure
-```
+
+```text
 .
 ├── app.py                    # Streamlit application
 ├── requirements.txt          # Python dependencies
