@@ -55,3 +55,9 @@ if cleaned_file is not None:
         st.error("CSV must contain 'question' and 'answer' columns")
 else:
     st.info("Please upload a CSV file with your email data to begin.")
+
+
+st.divider()
+st.caption(
+    "Source: [github.com/minat-hub/customer_support_agent](https://github.com/minat-hub/customer_support_agent)"
+)

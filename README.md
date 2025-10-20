@@ -185,4 +185,3 @@ An example file is provided: `sample_customer_data.csv`.
 ├── .env                      # Local secrets (not committed)
 └── .gitignore                # Ignores .env and venv
 ```
-
