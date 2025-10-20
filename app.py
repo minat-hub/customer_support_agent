@@ -42,7 +42,7 @@ if cleaned_file is not None:
         )
 
         st.subheader("What issue are you facing?")
-        question = st.text_input("What would you like to know?")
+        question = st.text_input("Enter your question here:")
 
         if question:
             with st.spinner("Searching for solutions..."):
