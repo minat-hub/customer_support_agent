@@ -8,7 +8,7 @@ from langchain_text_splitters import CharacterTextSplitter
 #from langchain_ollama import OllamaLLM
 #from langchain_groq import ChatGroq
 from langchain_community.chat_models import ChatSnowflakeCortex 
-from langchain_classic.chains import RetrievalQA
+from langchain.chains import RetrievalQA
 import tempfile
 import os
 from dotenv import load_dotenv
