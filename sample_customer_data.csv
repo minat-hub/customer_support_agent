@@ -1,0 +1,16 @@
+question,answer,category,product
+My login keeps failing even with correct password,"Please try clearing your browser cache and cookies, then attempt login again. If issue persists, use the 'Forgot Password' feature to reset your password.",authentication,web_app
+How do I export my data to Excel?,"Go to Reports section, select the data you want, click 'Export' button, and choose Excel format. The file will download automatically.",features,web_app
+The app is running very slowly today,We're currently experiencing higher than normal traffic. Try refreshing the page or using the mobile app as an alternative. Our team is working on resolving this.,performance,web_app
+I can't access my project files,"Check if you're in the correct workspace. If files are still missing, contact support with your project ID and we'll restore from backup.",data_access,web_app
+How to invite team members?,Navigate to Settings > Team Management > Invite Members. Enter their email addresses and assign appropriate permissions.,collaboration,web_app
+My payment failed but card is valid,This can happen due to bank security checks. Please try a different payment method or contact your bank to authorize the transaction.,billing,web_app
+Can I change my subscription plan?,Yes! Go to Billing > Subscription and click 'Change Plan'. Changes take effect immediately with pro-rated billing.,billing,web_app
+Where are my auto-saved files?,Auto-saved files are in the 'Drafts' folder. You can also enable desktop notifications for save confirmations in Settings.,features,web_app
+The mobile app crashes on startup,We've identified this issue on older devices. Update to the latest version from your app store or use the web version temporarily.,mobile,mobile_app
+How to delete my account permanently?,Submit an account deletion request from Settings > Account > Delete Account. Note: This action is irreversible and removes all data.,account,web_app
+I'm not receiving verification emails,Check your spam folder and add our domain to your safe senders list. You can also request a new verification email from your account page.,authentication,web_app
+Can I integrate with Google Drive?,"Yes, we support Google Drive integration. Go to Integrations > Cloud Storage and follow the setup instructions.",integrations,web_app
+The dashboard isn't loading properly,"Try using a different browser or incognito mode. If problem continues, provide screenshot to support for faster resolution.",performance,web_app
+How to set up two-factor authentication?,"Go to Security settings, enable 2FA, and follow the setup with your authenticator app. We recommend Authy or Google Authenticator.",security,web_app
+My data visualization looks incorrect,"Check your data filters and date ranges. If still incorrect, use the 'Report Issue' feature with specific details for our team to investigate.",features,web_app
