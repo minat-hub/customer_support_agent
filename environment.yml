@@ -5,6 +5,8 @@ dependencies:
   - hf-xet=1.1.8
   - langchain=0.3.27
   - langchain-community=0.3.30
+  - langchain-core=0.3.77
+  - langchain-text-splitters=0.3.11
   - opentelemetry-instrumentation-chromadb=0.47.2
   - sentence-transformers=4.1.0
-  - snowflake-snowpark-python
+  - snowflake-snowpark-python=
