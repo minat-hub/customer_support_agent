@@ -3,9 +3,9 @@ channels:
   - snowflake
 dependencies:
   - hf-xet=1.1.8
-  - langchain=0.3.27
-  - langchain-community=0.3.30
-  - langchain-core=0.3.77
-  - langchain-text-splitters=0.3.11
+  - langchain=1.0.0
+  - langchain-community=0.4
+  - langchain-core=1.0.0
+  - langchain-text-splitters=1.0.0
   - sentence-transformers=4.1.0
   - snowflake-snowpark-python
