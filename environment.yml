@@ -8,5 +8,3 @@ dependencies:
   - opentelemetry-instrumentation-chromadb=0.47.2
   - sentence-transformers=4.1.0
   - snowflake-snowpark-python
-  - langchain-huggingface
-  - langchain-groq

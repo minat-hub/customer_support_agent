@@ -1,11 +1,13 @@
 import streamlit as st
 import pandas as pd
 from langchain_community.vectorstores import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
+#from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import CharacterTextSplitter
 # Uncomment this to use Ollama
 #from langchain_ollama import OllamaLLM
-from langchain_groq import ChatGroq
+#from langchain_groq import ChatGroq
+from langchain_community.chat_models import ChatGroq
 from langchain_classic.chains import RetrievalQA
 import tempfile
 import os
