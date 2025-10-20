@@ -7,7 +7,7 @@ from langchain_text_splitters import CharacterTextSplitter
 # Uncomment this to use Ollama
 #from langchain_ollama import OllamaLLM
 #from langchain_groq import ChatGroq
-from langchain_community.chat_models import ChatGroq
+from langchain_community.chat_models import ChatSnowflakeCortex 
 from langchain_classic.chains import RetrievalQA
 import tempfile
 import os
@@ -37,8 +37,10 @@ if cleaned_file is not None:
 
         vector_store = Chroma.from_documents(documents=chunks, embedding=embeddings)
         # You can switch between OllamaLLM and ChatGroq here
-        llm = ChatGroq(model="openai/gpt-oss-120b")
+        #llm = ChatGroq(model="openai/gpt-oss-120b")
         # llm = OllamaLLM(model="llama3.2")
+        # Use the native Snowflake LLM
+        llm = ChatSnowflakeCortex(model_name="mixtral-8x7b-instruct")
 
         qa_chain = RetrievalQA.from_chain_type(
             llm=llm, chain_type="stuff", retriever=vector_store.as_retriever()
